@@ -1,0 +1,5 @@
+This is some integration for gedit
+ 1.ooc.lang is GtkSourceView2 file which defines language.
+ It is incomplete
+ 2.ooc.xml is set of some gedit snippets.gEdit plugin is on http://live.gnome.org/Gedit/Plugins/Snippets
+ Than  Menu: Tools -> Manage Snippets and import ooc.xml

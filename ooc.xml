@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="ooc">
+  <snippet>
+    <text><![CDATA[main:func
+ {
+
+	${1:Your code here}
+
+
+ }]]></text>
+    <tag>app</tag>
+    <description>app</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:What} as ${2:type}]]></text>
+    <tag>as</tag>
+    <description>cast</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:Name of class}:class ${2:extends or not}
+ {
+
+	${3:Your code}
+	init: func() {}
+
+ }]]></text>
+    <tag>class</tag>
+    <description>class</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[${1:What} cover from ${2:Type or class} $0]]></text>
+    <tag>cover</tag>
+    <description>cover from</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[for(${1:iter} in ${2:range}) {
+  ${3:code}
+}]]></text>
+    <tag>for</tag>
+    <description>for</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[include ${1:What to include}]]></text>
+    <tag>include</tag>
+    <description>include</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[match ${1:variable} 
+ {
+ 	case ${2:selector} => ${3:what to make}
+ 
+ 
+ 
+ }]]></text>
+    <tag>match</tag>
+    <description>match</description>
+  </snippet>
+</snippets>
