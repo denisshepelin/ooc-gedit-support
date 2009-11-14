@@ -122,19 +122,33 @@
   <context id="keysymbol" style-ref="keyword">
    <prefix>(?<!\%{symbolchar})</prefix>
    <suffix>(?!\%{symbolchar})</suffix>   
-    <keyword>\.\.</keyword>
+    <keyword>:=</keyword>
     <keyword>::</keyword>
+    <keyword>=</keyword>
+    <keyword>*=</keyword>
+    <keyword>+=</keyword>
+    <keyword>-=</keyword>
+    <keyword>/=</keyword>
+    <keyword>==</keyword>
     <keyword>=</keyword>
     <keyword>@</keyword>
     <keyword>~</keyword>
     <keyword>-></keyword>
     <keyword>|</keyword>
-    <keyword>:?</keyword>
+    <keyword>||</keyword>
     <keyword>:?></keyword>
     <keyword>^</keyword>
-    <keyword><-</keyword>
+    <keyword>..</keyword>
     <keyword>&&</keyword>
     <keyword>&</keyword>  
+    <keyword>>></keyword>
+    <keyword><<</keyword>   
+    <keyword><<<</keyword>
+    <keyword><>>></keyword>
+    <keyword>>>=</keyword>
+    <keyword><<=</keyword>
+    <keyword><<<=</keyword>
+    <keyword>>>>=</keyword>
    </context>
 
    <context id="keywords" style-ref="keyword">
