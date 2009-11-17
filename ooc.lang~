@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
- 
+
 <language id="ooc" _name="Ooc" version="2.0" _section="Sources">
  <metadata>
   <property name="mimetypes">text/x-ooc</property>
@@ -46,18 +46,14 @@
   <context id="escape-seq" style-ref="escaped-character">
    <match>\%{char-esc}</match>
   </context> 
- 
+
   <context id="line-comment" style-ref="comment" end-at-line-end="true">
    <start>//</start>
     <include>
      <context ref="def:in-line-comment"/>
     </include>
   </context>    
-<<<<<<< HEAD:ooc_curr.lang
- 
-=======
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
   <context id="multiline-comment" style-ref="comment">
     <start>/\*</start>
     <end>\*/</end>
@@ -65,19 +61,11 @@
         <context ref="def:in-comment"/>
     </include>
  </context>
-<<<<<<< HEAD:ooc_curr.lang
- 
-  <context id="modpath" style-ref="module">
-   <match>\%{cap-ident}(\.\%{cap-ident})*(?=\.)</match>
-  </context>
- 
-=======
 
   <context id="modpath" style-ref="module">
    <match>\%{cap-ident}(\.\%{cap-ident})*(?=\.)</match>
   </context>
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
   <context id="string" style-ref="string">
    <start>"</start>
    <end>"</end>
@@ -85,19 +73,10 @@
    <context ref="escape-seq"/>
     </include>
   </context>
- 
+
   <context id="character-constant" style-ref="string">
    <match>('\%{char-esc}')|('[^\\']')</match>
   </context>
-<<<<<<< HEAD:ooc_curr.lang
- 
- 
- 
-    <context id="null-value" style-ref="null-value">
-      <keyword>null</keyword>
-    </context>
- 
-=======
 
   <context id="type-var" style-ref="type-var">
    <match>'\%{low-ident}</match>
@@ -107,7 +86,6 @@
       <keyword>null</keyword>
     </context>
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
     <context id="boolean" style-ref="boolean">
       <keyword>false</keyword>
       <keyword>true</keyword>
@@ -121,11 +99,7 @@
             [0-9]+[FfDd]))
       </match>
 </context>
-<<<<<<< HEAD:ooc_curr.lang
- 
-=======
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
 <context id="octal" style-ref="octal">
     <match extended="true">
         (?&lt;![\w\.])
@@ -133,11 +107,7 @@
         (?![\w\.])
     </match>
 </context>
-<<<<<<< HEAD:ooc_curr.lang
- 
-=======
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
 <context id="decimal" style-ref="decimal">
     <match extended="true">
         (?![\w\.])
@@ -145,11 +115,7 @@
         (?![\w\.])
     </match>
 </context>
-<<<<<<< HEAD:ooc_curr.lang
- 
-=======
 
->>>>>>> 54568e7d1a4bf4179e41e3fb447e016d25b7cefc:ooc.lang
   <context id="keywords" style-ref="keyword">
     <keyword>class</keyword> 
     <keyword>cover</keyword> 
@@ -191,51 +157,12 @@
     <keyword>null</keyword> 
     <keyword>default</keyword> 
    </context>
- 
-  <context id="type-var" style-ref="type-var"> 
-        <keyword>Int</keyword>
-        <keyword>Int8</keyword> 
-        <keyword>Int16</keyword> 
-        <keyword>Int32</keyword> 
-        <keyword>Int64</keyword> 
-        <keyword>Int80</keyword> 
-        <keyword>Int128</keyword>
-        <keyword>UInt</keyword>
-        <keyword>UInt8</keyword> 
-        <keyword>UInt16</keyword> 
-        <keyword>UInt32</keyword> 
-        <keyword>UInt64</keyword> 
-        <keyword>UInt80</keyword> 
-        <keyword>UInt128</keyword>
-        <keyword>Octet</keyword> 
-        <keyword>Short</keyword> 
-        <keyword>UShort</keyword> 
-        <keyword>Long</keyword> 
-        <keyword>ULong</keyword> 
-        <keyword>LLong</keyword> 
-        <keyword>ULLong</keyword>
-        <keyword>Float</keyword> 
-        <keyword>Double</keyword> 
-        <keyword>LDouble</keyword> 
-        <keyword>Float32</keyword> 
-        <keyword>Float64</keyword> 
-        <keyword>Float128</keyword>
-        <keyword>Char</keyword> 
-        <keyword>UChar</keyword> 
-        <keyword>WChar</keyword> 
-        <keyword>String</keyword>
-        <keyword>Void</keyword> 
-        <keyword>Pointer</keyword> 
-        <keyword>Bool</keyword> 
-        <keyword>SizeT</keyword> 
-        <keyword>This</keyword>  
-  </context>  
-  
+
   <!-- main context -->
    <context id="ooc">
     <include>
      <context ref="keywords"/>
-     <context ref="boolean"/>
+     <context ref="boolean-constant"/>
      
      <context ref="character-constant"/>
      <context ref="string"/>
