@@ -162,7 +162,7 @@
    <context id="ooc">
     <include>
      <context ref="keywords"/>
-     <context ref="boolean"/>
+     <context ref="boolean-constant"/>
      
      <context ref="character-constant"/>
      <context ref="string"/>
